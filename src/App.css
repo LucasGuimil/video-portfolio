@@ -1,6 +1,27 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  grid-template: "sidebar main" 1fr;
+  background-color: #101014;
+}
+.sidebar {
+  background-color: #141010;
+  padding: 1rem;
+  max-width: 300px;
+  margin-left: 0;
+  height: 100%;
+  grid-area: sidebar;
+
+h2 {
+  color: #FF5800;
+}
+}
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.video-card {
+  padding: 1rem;
 }
