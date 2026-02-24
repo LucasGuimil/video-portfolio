@@ -1,14 +1,13 @@
 import './App.css'
-import { VideoList } from './components/body/VIdeoList.tsx'
 import { SideBar } from './components/header/SideBar.tsx'
+import { Projects } from './pages/projects.tsx'
 
 function App() {
 
   return (
     <>
-    
       <SideBar></SideBar>
-      <VideoList />
+      <Projects />
     </>
   )
 }
